@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<i>Я вчуся програмувати на мові<i> <b>JavaScript</b><br><br>");
+
+        document.write("Укажіть ваш вік<br>");
+        let age = 18;
+        document.write("Мій вік " + age + " років<br><br><br>");
+        
+        let name = "Юрій<br>";
+        let gender = true;
+        document.write("Мене звуть " + name)
+        document.write("Я чоловік? " + gender + "<br><br>")
+
+        let x = 5;
+        let y = 7;
+        let z = 12;
+        let a = 5.5;
+        let b = 8;
+        let sum = (x + y) / ((z - a) * (x - b * z));
+        document.write(sum + "<br><br>");
+
+        document.write(17 + -5 + "<br>");
+        document.write(Number(17 + -5) + "<br><br>");
+        
+        if(gender)
+        {
+            document.write("Чоловік <br>")
+        }
+        else
+        {
+            document.write("Жінка <br>")
+        }
+
+        if(age < 18)
+        {
+            document.write("У мене юний вік<br><br>");
+        }
+        if(age >= 18 && age <= 30)
+        {
+            document.write("Я молодий<br><br>");
+        }
+        if(age >= 31 && age <= 50 )
+        {
+            document.write("Я дорослий<br><br>");
+        }if(age >= 51 && age <= 80)
+        {
+            document.write("Я зрілий<br><br>");
+        }
+        if(age > 80)
+        {
+            document.write("Я старий<br><br>")
+        }
+        
+        let cols = 9;
+        let rows = 9;
+
+        document.write("<table>");
+        for(let i = 1; i <= cols; i++)
+        {
+            document.write("<tr>");
+            for(let j = 1; j <= rows; j++)
+            {
+                document.write("<td style='text-align:center;'>" + (i * j) + "</td>");
+            }
+        }
+        
+    </script>
+</body>
+</html>
